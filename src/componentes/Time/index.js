@@ -1,7 +1,7 @@
 import Colaborador from "../Colaborador";
 import "./Time.css";
 
-const Time = (props) => {
+const Time = (props, aoDeletar) => {
   const css = { backgroundColor: props.corSecundaria };
 
   return (
@@ -15,6 +15,7 @@ const Time = (props) => {
             nome={colaborador.nome}
             cargo={colaborador.cargo}
             imagem={colaborador.imagem}
+            aoDeletar={aoDeletar}
           />
         ))}
       </div>
