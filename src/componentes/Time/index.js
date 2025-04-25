@@ -3,7 +3,7 @@ import "./Time.css";
 import hexToRgba from "hex-to-rgba";
 
 const Time = (props, aoDeletar) => {
-  const css = { backgroundColor: hexToRgba(props.cor, 0.6) };
+  const css = { backgroundColor: hexToRgba(`${props.cor}`, 0.6) };
 
   return (
     (props.colaboradores.length > 0) ? <section className="time" style={css}>
