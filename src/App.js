@@ -122,7 +122,8 @@ function App() {
       {times.map(time => <Time 
         mudarCor={mudarCorDoTime}
         key={time.nome} 
-        nome={time.nome} 
+        nome={time.nome}
+        cor={time.cor}
         colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
         aoDeletar={deletarColaborador}
       />)}
